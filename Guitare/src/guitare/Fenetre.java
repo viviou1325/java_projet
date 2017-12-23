@@ -5,6 +5,7 @@
  */
 package guitare;
 
+import java.awt.BorderLayout;
 import java.awt.Image;
 import javax.swing.JFrame;
 import javax.swing.JScrollPane;
@@ -15,7 +16,7 @@ import javax.swing.JScrollPane;
  */
 public class Fenetre extends JFrame{
     Image img;
-    
+    bouton button;
     Fenetre(String s){
         super(s);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,11 +24,10 @@ public class Fenetre extends JFrame{
         setLocation(100,100);
         setSize(974,540);
         
-        //éditeur de texte
+        button = new bouton(this) ;
         //scroll bar
         JScrollPane scroll = new JScrollPane();
         getContentPane().add(scroll);
-        
         
         
         
