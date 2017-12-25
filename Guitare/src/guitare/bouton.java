@@ -19,11 +19,24 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 public class bouton implements ActionListener{
     Fenetre fenetre;
   public bouton(Fenetre j){
-      JButton button1=new JButton("oui");
+      ImageIcon icon= new ImageIcon("C:\\Users\\taka\\Desktop\\java\\java_projet\\Guitare\\src\\image\\icon.png");
+      ImageIcon icon_s= new ImageIcon("C:\\Users\\taka\\Desktop\\java\\java_projet\\Guitare\\src\\image\\icon_selected.png");
+      JButton button1=new JButton(icon);
       button1.setActionCommand("oui");
+      
       button1.addActionListener(this);
       
-      button1.setBounds(50,30,75,40);
+      JButton button=new JButton(icon_s);
+      button.setActionCommand("ou");
+      button.addActionListener(this);
+      
+      button.setBounds(80,80,75,40);
+      button.setBorder(null);
+      button.setBorderPainted(false);
+      button.setContentAreaFilled(false);
+      button.setOpaque(false);
+      
+      button1.setBounds(80,30,75,40);
       button1.setBorder(null);
       button1.setBorderPainted(false);
       button1.setContentAreaFilled(false);
@@ -31,8 +44,8 @@ public class bouton implements ActionListener{
       
       j.setLayout(new BorderLayout());
       j.add(button1);
+      j.add(button);
       
-//      j.add(button1,BorderLayout.CENTER);
   }
 
     public void actionPerformed(ActionEvent evenement){
