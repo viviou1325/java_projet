@@ -24,8 +24,9 @@ public class Fenetre extends javax.swing.JFrame {
         super(s);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
-        initBoutonIcon();
+        initBoutonIcon();//met les icones sur les boutons
         setVisible(true);
+        setResizable(false);
     }
 
     /**
