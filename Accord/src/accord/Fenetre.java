@@ -7,14 +7,21 @@ package accord;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import com.google.gson.Gson;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
 
 /**
  *
  * @author taka
  */
 public class Fenetre extends javax.swing.JFrame {
-    private final ImageIcon select= new ImageIcon("C:\\Users\\taka\\Desktop\\java\\java_projet\\Accord\\src\\image\\icon.png");
-    private final ImageIcon unselect= new ImageIcon("C:\\Users\\taka\\Desktop\\java\\java_projet\\Accord\\src\\image\\icon_selected.png");
+    private final ImageIcon select= new ImageIcon("src/image/icon.png");
+    private final ImageIcon unselect= new ImageIcon("src/image/icon_selected.png");
     
     int Corde1=0,Corde2=0,Corde3=0,Corde4=0,Corde5=0,Corde6=0;
     /**
@@ -472,12 +479,14 @@ public class Fenetre extends javax.swing.JFrame {
             jButton1.setIcon(select);
             Corde1=0;
         }
+        lecture_corde();
+        lecture_choice();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if (jButton2.getIcon().equals(select)) {
             jButton2.setIcon(unselect);
-            jButton7.setIcon(select);//+5 pour chaque colone
+            jButton7.setIcon(select);
             jButton12.setIcon(select);
             jButton17.setIcon(select);
             jButton22.setIcon(select);
@@ -496,9 +505,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton12.setIcon(select);
             jButton17.setIcon(select);
             jButton22.setIcon(select);
+            Corde2=2;
         }
         else{
             jButton7.setIcon(select);
+            Corde2=0;
         }
     }//GEN-LAST:event_jButton7ActionPerformed
 
@@ -509,9 +520,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton13.setIcon(select);
             jButton18.setIcon(select);
             jButton23.setIcon(select);
+            Corde3=1;
         }
         else{
             jButton3.setIcon(select);
+            Corde3=0;
         }
     }//GEN-LAST:event_jButton3ActionPerformed
 
@@ -522,9 +535,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton13.setIcon(select);
             jButton18.setIcon(select);
             jButton23.setIcon(select);
+            Corde3=2;
         }
         else{
             jButton8.setIcon(select);
+            Corde3=0;
         }
     }//GEN-LAST:event_jButton8ActionPerformed
 
@@ -535,9 +550,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton13.setIcon(unselect);
             jButton18.setIcon(select);
             jButton23.setIcon(select);
+            Corde3=3;
         }
         else{
             jButton13.setIcon(select);
+            Corde3=0;
         }
     }//GEN-LAST:event_jButton13ActionPerformed
 
@@ -548,9 +565,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton13.setIcon(select);
             jButton18.setIcon(unselect);
             jButton23.setIcon(select);
+            Corde3=4;
         }
         else{
             jButton18.setIcon(unselect);
+            Corde3=0;
         }
     }//GEN-LAST:event_jButton18ActionPerformed
 
@@ -561,9 +580,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton13.setIcon(select);
             jButton18.setIcon(select);
             jButton23.setIcon(unselect);
+            Corde3=5;
         }
         else{
             jButton23.setIcon(select);
+            Corde3=0;
         }
     }//GEN-LAST:event_jButton23ActionPerformed
 
@@ -574,9 +595,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton11.setIcon(select);
             jButton16.setIcon(select);
             jButton21.setIcon(select);
+            Corde1=2;
         }
         else{
             jButton6.setIcon(select);
+            Corde1=0;
         }
     }//GEN-LAST:event_jButton6ActionPerformed
 
@@ -587,9 +610,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton11.setIcon(unselect);
             jButton16.setIcon(select);
             jButton21.setIcon(select);
+            Corde1=3;
         }
         else{
             jButton11.setIcon(select);
+            Corde1=0;
         }
     }//GEN-LAST:event_jButton11ActionPerformed
 
@@ -600,9 +625,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton11.setIcon(select);
             jButton16.setIcon(unselect);
             jButton21.setIcon(select);
+            Corde1=4;
         }
         else{
             jButton16.setIcon(select);
+            Corde1=0;
         }
     }//GEN-LAST:event_jButton16ActionPerformed
 
@@ -613,9 +640,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton11.setIcon(select);
             jButton16.setIcon(select);
             jButton21.setIcon(unselect);
+            Corde1=5;
         }
         else{
             jButton21.setIcon(select);
+            Corde1=0;
         }
     }//GEN-LAST:event_jButton21ActionPerformed
 
@@ -626,9 +655,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton12.setIcon(unselect);
             jButton17.setIcon(select);
             jButton22.setIcon(select);
+            Corde2=3;
         }
         else{
             jButton12.setIcon(select);
+            Corde2=0;
         }
     }//GEN-LAST:event_jButton12ActionPerformed
 
@@ -639,9 +670,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton12.setIcon(select);
             jButton17.setIcon(unselect);
             jButton22.setIcon(select);
+            Corde2=4;
         }
         else{
             jButton17.setIcon(select);
+            Corde2=0;
         }
     }//GEN-LAST:event_jButton17ActionPerformed
 
@@ -652,9 +685,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton12.setIcon(select);
             jButton17.setIcon(select);
             jButton22.setIcon(unselect);
+            Corde2=5;
         }
         else{
             jButton22.setIcon(select);
+            Corde2=0;
         }
     }//GEN-LAST:event_jButton22ActionPerformed
 
@@ -665,9 +700,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton14.setIcon(select);
             jButton19.setIcon(select);
             jButton24.setIcon(select);
+            Corde4=1;
         }
         else{
             jButton4.setIcon(select);
+            Corde4=0;
         }
     }//GEN-LAST:event_jButton4ActionPerformed
 
@@ -678,9 +715,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton14.setIcon(select);
             jButton19.setIcon(select);
             jButton24.setIcon(select);
+            Corde4=2;
         }
         else{
             jButton9.setIcon(select);
+            Corde4=0;
         }
     }//GEN-LAST:event_jButton9ActionPerformed
 
@@ -691,9 +730,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton14.setIcon(unselect);
             jButton19.setIcon(select);
             jButton24.setIcon(select);
+            Corde4=3;
         }
         else{
             jButton14.setIcon(select);
+            Corde4=0;
         }
     }//GEN-LAST:event_jButton14ActionPerformed
 
@@ -704,9 +745,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton14.setIcon(select);
             jButton19.setIcon(unselect);
             jButton24.setIcon(select);
+            Corde4=4;
         }
         else{
             jButton19.setIcon(select);
+            Corde4=0;
         }
     }//GEN-LAST:event_jButton19ActionPerformed
 
@@ -717,9 +760,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton14.setIcon(select);
             jButton19.setIcon(select);
             jButton24.setIcon(unselect);
+            Corde4=5;
         }
         else{
             jButton24.setIcon(select);
+            Corde4=0;
         }
     }//GEN-LAST:event_jButton24ActionPerformed
 
@@ -730,9 +775,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton15.setIcon(select);
             jButton20.setIcon(select);
             jButton25.setIcon(select);
+            Corde5=1;
         }
         else{
             jButton5.setIcon(select);
+            Corde5=0;
         }
     }//GEN-LAST:event_jButton5ActionPerformed
 
@@ -743,9 +790,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton15.setIcon(select);
             jButton20.setIcon(select);
             jButton25.setIcon(select);
+            Corde5=2;
         }
         else{
             jButton10.setIcon(select);
+            Corde5=0;
         }
     }//GEN-LAST:event_jButton10ActionPerformed
 
@@ -756,9 +805,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton15.setIcon(unselect);
             jButton20.setIcon(select);
             jButton25.setIcon(select);
+            Corde5=3;
         }
         else{
             jButton15.setIcon(select);
+            Corde5=0;
         }
     }//GEN-LAST:event_jButton15ActionPerformed
 
@@ -769,9 +820,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton15.setIcon(select);
             jButton20.setIcon(unselect);
             jButton25.setIcon(select);
+            Corde5=4;
         }
         else{
             jButton20.setIcon(select);
+            Corde5=0;
         }
     }//GEN-LAST:event_jButton20ActionPerformed
 
@@ -782,9 +835,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton15.setIcon(select);
             jButton20.setIcon(select);
             jButton25.setIcon(unselect);
+            Corde5=5;
         }
         else{
             jButton25.setIcon(select);
+            Corde5=0;
         }
     }//GEN-LAST:event_jButton25ActionPerformed
 
@@ -795,9 +850,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton28.setIcon(select);
             jButton29.setIcon(select);
             jButton30.setIcon(select);
+            Corde6=1;
         }
         else{
             jButton26.setIcon(select);
+            Corde6=0;
         }
     }//GEN-LAST:event_jButton26ActionPerformed
 
@@ -808,9 +865,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton28.setIcon(select);
             jButton29.setIcon(select);
             jButton30.setIcon(select);
+            Corde6=2;
         }
         else{
             jButton27.setIcon(select);
+            Corde6=0;
         }
     }//GEN-LAST:event_jButton27ActionPerformed
 
@@ -821,9 +880,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton28.setIcon(unselect);
             jButton29.setIcon(select);
             jButton30.setIcon(select);
+            Corde6=3;
         }
         else{
             jButton28.setIcon(select);
+            Corde6=0;
         }
     }//GEN-LAST:event_jButton28ActionPerformed
 
@@ -834,9 +895,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton28.setIcon(select);
             jButton29.setIcon(unselect);
             jButton30.setIcon(select);
+            Corde6=4;
         }
         else{
             jButton29.setIcon(select);
+            Corde6=0;
         }
     }//GEN-LAST:event_jButton29ActionPerformed
 
@@ -847,9 +910,11 @@ public class Fenetre extends javax.swing.JFrame {
             jButton28.setIcon(select);
             jButton29.setIcon(select);
             jButton30.setIcon(unselect);
+            Corde6=5;
         }
         else{
             jButton30.setIcon(select);
+            Corde6=0;
         }
     }//GEN-LAST:event_jButton30ActionPerformed
 
@@ -885,6 +950,21 @@ public class Fenetre extends javax.swing.JFrame {
         jButton29.setIcon(select);
         jButton30.setIcon(select);
     
+    }
+    
+    private void lecture_choice(){
+        String ligne = choice1.getItem(choice1.getSelectedIndex());//lis la ligne choisis 
+        System.out.println("la ligne choisis: "+ligne);
+    }
+    
+    private void lecture_corde(){
+        System.out.println("________________________");
+        System.out.println("la corde1= "+Corde1);
+        System.out.println("la corde2= "+Corde2);
+        System.out.println("la corde3= "+Corde3);
+        System.out.println("la corde4= "+Corde4);
+        System.out.println("la corde5= "+Corde5);
+        System.out.println("la corde6= "+Corde6);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
