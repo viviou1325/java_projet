@@ -13,8 +13,8 @@ import javax.swing.JFrame;
  * @author taka
  */
 public class Fenetre extends javax.swing.JFrame {
-    private ImageIcon select= new ImageIcon("C:\\Users\\taka\\Desktop\\java\\java_projet\\Accord\\src\\image\\icon.png");
-    private ImageIcon unselect= new ImageIcon("C:\\Users\\taka\\Desktop\\java\\java_projet\\Accord\\src\\image\\icon_selected.png");
+    private ImageIcon select= new ImageIcon("src/image/icon.png");
+    private ImageIcon unselect= new ImageIcon("src/image/icon_selected.png");
     
     int Corde1=0,Corde2=0,Corde3=0,Corde4=0,Corde5=0,Corde6=0;
     /**

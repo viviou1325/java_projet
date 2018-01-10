@@ -2,34 +2,34 @@
 
 "boutton":["boutton1","boutton2","boutton3","boutton4","boutton5"]
 
-frete test de merde qui ne marche pas*/
+ligne test de merde qui ne marche pas*/
 
 
 {"listeAccord":  // c'est un objet qui contient les accords majeur et mineur ça serait cool de rajouter d'autre catégorie
 	[  // tableau pour stocker accord mineur et majeur
 		{"Majeur": 
 			[  // liste des accords majeur
-				{"nom": "do", "listeBouton": [5,9,14],"frete":0}, // listebouton = bouton activé pour cette acoord frete = ligne du 1 er note de l'accord 1 frete comporteb4 ligne  
-				{"nom": "re", "listebouton": [10,12,17],"frete":0},
-				{"nom": "mi", "listebouton": [10,12,17],"frete":0},
-				{"nom": "fa", "listebouton": [10,12,17],"frete":0},
-				{"nom": "sol", "listebouton": [10,12,17],"frete":0},
-				{"nom": "la", "listebouton": [10,12,17],"frete":0},
-				{"nom": "si", "listebouton": [10,12,17],"frete":0},
-				{"nom": "doo", "listebouton": [10,12,17],"frete":0}
+				{"nom": "do", "listeBouton": [5,9,14],"ligne":0}, // listebouton = bouton activé pour cette acoord ligne = ligne du 1 er note de l'accord 1 ligne comporteb4 ligne  
+				{"nom": "re", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "mi", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "fa", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "sol", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "la", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "si", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "doo", "listebouton": [10,12,17],"ligne":0}
 			]
 		},
 		
 		{"Mineur":
 			[
-				{"nom": "do", "listeBouton": [5,9,14],"frete":0},
-				{"nom": "re", "listebouton": [10,12,17],"frete":0},
-				{"nom": "mi", "listebouton": [10,12,17],"frete":0},
-				{"nom": "fa", "listebouton": [10,12,17],"frete":0},
-				{"nom": "sol", "listebouton": [10,12,17],"frete":0},
-				{"nom": "la", "listebouton": [10,12,17],"frete":0},
-				{"nom": "si", "listebouton": [10,12,17],"frete":0},
-				{"nom": "doo", "listebouton": [10,12,17],"frete":0}
+				{"nom": "do", "listeBouton": [5,9,14],"ligne":0},
+				{"nom": "re", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "mi", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "fa", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "sol", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "la", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "si", "listebouton": [10,12,17],"ligne":0},
+				{"nom": "doo", "listebouton": [10,12,17],"ligne":0}
 			]
 		}
 	]
