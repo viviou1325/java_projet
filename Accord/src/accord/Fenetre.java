@@ -7,6 +7,8 @@ package accord;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
+import javax.swing.text.*;
+import javax.swing.event.*;
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
@@ -14,6 +16,8 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
+import java.awt.Color;
+import javax.swing.JTextField;
 
 /**
  *
@@ -22,6 +26,7 @@ import com.google.gson.stream.JsonWriter;
 public class Fenetre extends javax.swing.JFrame {
     private final ImageIcon select= new ImageIcon("src/image/icon.png");
     private final ImageIcon unselect= new ImageIcon("src/image/icon_selected.png");
+    public String text="correspond a aucun accord";
     
     int Corde1=0,Corde2=0,Corde3=0,Corde4=0,Corde5=0,Corde6=0;
     /**
@@ -32,6 +37,8 @@ public class Fenetre extends javax.swing.JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         initComponents();
         initBoutonIcon();//met les icones sur les boutons
+        
+        
         setVisible(true);
         setResizable(false);
     }
@@ -76,7 +83,7 @@ public class Fenetre extends javax.swing.JFrame {
         jButton28 = new javax.swing.JButton();
         jButton29 = new javax.swing.JButton();
         jButton30 = new javax.swing.JButton();
-        jTextField1 = new javax.swing.JTextField();
+        Accord = new javax.swing.JTextField(text);
         choice1 = new java.awt.Choice();
         Clear = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -84,6 +91,8 @@ public class Fenetre extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jButton1.setMargin(null);
+        jButton1.setBorder(null);
+        jButton1.setBorderPainted(false);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -91,6 +100,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton2.setMargin(null);
+        jButton2.setBorder(null);
+        jButton2.setBorderPainted(false);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
@@ -98,6 +109,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton3.setMargin(null);
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -105,6 +118,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton4.setMargin(null);
+        jButton4.setBorder(null);
+        jButton4.setBorderPainted(false);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -112,6 +127,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton5.setMargin(null);
+        jButton5.setBorder(null);
+        jButton5.setBorderPainted(false);
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -119,6 +136,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton6.setMargin(null);
+        jButton6.setBorder(null);
+        jButton6.setBorderPainted(false);
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton6ActionPerformed(evt);
@@ -126,6 +145,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton7.setMargin(null);
+        jButton7.setBorder(null);
+        jButton7.setBorderPainted(false);
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -133,6 +154,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton8.setMargin(null);
+        jButton8.setBorder(null);
+        jButton8.setBorderPainted(false);
         jButton8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton8ActionPerformed(evt);
@@ -140,6 +163,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton9.setMargin(null);
+        jButton9.setBorder(null);
+        jButton9.setBorderPainted(false);
         jButton9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton9ActionPerformed(evt);
@@ -147,6 +172,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton10.setMargin(null);
+        jButton10.setBorder(null);
+        jButton10.setBorderPainted(false);
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -154,6 +181,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton11.setMargin(null);
+        jButton11.setBorder(null);
+        jButton11.setBorderPainted(false);
         jButton11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton11ActionPerformed(evt);
@@ -161,6 +190,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton12.setMargin(null);
+        jButton12.setBorder(null);
+        jButton12.setBorderPainted(false);
         jButton12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton12ActionPerformed(evt);
@@ -168,6 +199,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton13.setMargin(null);
+        jButton13.setBorder(null);
+        jButton13.setBorderPainted(false);
         jButton13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton13ActionPerformed(evt);
@@ -175,6 +208,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton14.setMargin(null);
+        jButton14.setBorder(null);
+        jButton14.setBorderPainted(false);
         jButton14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton14ActionPerformed(evt);
@@ -182,6 +217,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton15.setMargin(null);
+        jButton15.setBorder(null);
+        jButton15.setBorderPainted(false);
         jButton15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton15ActionPerformed(evt);
@@ -189,6 +226,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton16.setMargin(null);
+        jButton16.setBorder(null);
+        jButton16.setBorderPainted(false);
         jButton16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton16ActionPerformed(evt);
@@ -196,6 +235,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton17.setMargin(null);
+        jButton17.setBorder(null);
+        jButton17.setBorderPainted(false);
         jButton17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton17ActionPerformed(evt);
@@ -203,6 +244,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton18.setMargin(null);
+        jButton18.setBorder(null);
+        jButton18.setBorderPainted(false);
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
@@ -210,6 +253,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton19.setMargin(null);
+        jButton19.setBorder(null);
+        jButton19.setBorderPainted(false);
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
@@ -217,6 +262,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton20.setMargin(null);
+        jButton20.setBorder(null);
+        jButton20.setBorderPainted(false);
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton20ActionPerformed(evt);
@@ -224,6 +271,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton21.setMargin(null);
+        jButton21.setBorder(null);
+        jButton21.setBorderPainted(false);
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton21ActionPerformed(evt);
@@ -231,6 +280,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton22.setMargin(null);
+        jButton22.setBorder(null);
+        jButton22.setBorderPainted(false);
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton22ActionPerformed(evt);
@@ -238,6 +289,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton23.setMargin(null);
+        jButton23.setBorder(null);
+        jButton23.setBorderPainted(false);
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton23ActionPerformed(evt);
@@ -245,6 +298,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton24.setMargin(null);
+        jButton24.setBorder(null);
+        jButton24.setBorderPainted(false);
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton24ActionPerformed(evt);
@@ -252,6 +307,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton25.setMargin(null);
+        jButton25.setBorder(null);
+        jButton25.setBorderPainted(false);
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton25ActionPerformed(evt);
@@ -259,6 +316,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton26.setMargin(null);
+        jButton26.setBorder(null);
+        jButton26.setBorderPainted(false);
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton26ActionPerformed(evt);
@@ -266,6 +325,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton27.setMargin(null);
+        jButton27.setBorder(null);
+        jButton27.setBorderPainted(false);
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton27ActionPerformed(evt);
@@ -273,6 +334,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton28.setMargin(null);
+        jButton28.setBorder(null);
+        jButton28.setBorderPainted(false);
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton28ActionPerformed(evt);
@@ -280,6 +343,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton29.setMargin(null);
+        jButton29.setBorder(null);
+        jButton29.setBorderPainted(false);
         jButton29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton29ActionPerformed(evt);
@@ -287,6 +352,8 @@ public class Fenetre extends javax.swing.JFrame {
         });
 
         jButton30.setMargin(null);
+        jButton30.setBorder(null);
+        jButton30.setBorderPainted(false);
         jButton30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton30ActionPerformed(evt);
@@ -406,6 +473,13 @@ public class Fenetre extends javax.swing.JFrame {
                     .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
 
+        Accord.getDocument().addDocumentListener(new MyDocListener());
+        Accord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AccordActionPerformed(evt);
+            }
+        });
+
         for (int i=1; i<26;++i){
             String s=Integer.toString(i);
             choice1.add(s);
@@ -431,7 +505,7 @@ public class Fenetre extends javax.swing.JFrame {
                 .addComponent(choice1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
+                    .addComponent(Accord, javax.swing.GroupLayout.DEFAULT_SIZE, 231, Short.MAX_VALUE)
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Clear)
@@ -441,7 +515,7 @@ public class Fenetre extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Accord, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Clear)
@@ -479,8 +553,8 @@ public class Fenetre extends javax.swing.JFrame {
             jButton1.setIcon(select);
             Corde1=0;
         }
-        lecture_corde();
-        lecture_choice();
+        String n="bonsoir";
+        set_text(n);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -917,6 +991,9 @@ public class Fenetre extends javax.swing.JFrame {
             Corde6=0;
         }
     }//GEN-LAST:event_jButton30ActionPerformed
+    private void AccordActionPerformed(java.awt.event.ActionEvent evt){
+    }//fonction pour pas faire bugué le prog
+
 
     private void initBoutonIcon(){
         jButton1.setIcon(select);
@@ -952,22 +1029,45 @@ public class Fenetre extends javax.swing.JFrame {
     
     }
     
-    private void lecture_choice(){
-        String ligne = choice1.getItem(choice1.getSelectedIndex());//lis la ligne choisis 
-        System.out.println("la ligne choisis: "+ligne);
+    public String get_choice(){
+        String ligne = choice1.getItem(choice1.getSelectedIndex());
+        return ligne;
     }
     
-    private void lecture_corde(){
-        System.out.println("________________________");
-        System.out.println("la corde1= "+Corde1);
-        System.out.println("la corde2= "+Corde2);
-        System.out.println("la corde3= "+Corde3);
-        System.out.println("la corde4= "+Corde4);
-        System.out.println("la corde5= "+Corde5);
-        System.out.println("la corde6= "+Corde6);
+    public int get_cordes(int num_corde){
+       int nb=0;
+        switch (num_corde) {
+            case 1:
+                nb = Corde1;
+                break;
+            case 2:
+                nb = Corde2;
+                break;
+            case 3:
+                nb = Corde3;
+                break;
+            case 4:
+                nb = Corde4;
+                break;
+            case 5:
+                nb = Corde5;
+                break;
+            case 6:
+                nb = Corde6;
+                break;
+            default:
+                break;
+        }
+        
+        return nb;
+    }
+    
+    public void set_text(String s){
+        text=s;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Accord;
     private javax.swing.JButton Clear;
     private java.awt.Choice choice1;
     private javax.swing.JButton jButton1;
@@ -1002,6 +1102,24 @@ public class Fenetre extends javax.swing.JFrame {
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
+
+    class MyDocListener implements DocumentListener{
+        String newline = "\n";
+ 
+        public void insertUpdate(DocumentEvent e) {
+            updateLog(e, "inserted into");
+        }
+        public void removeUpdate(DocumentEvent e) {
+            updateLog(e, "removed from");
+        }
+        public void changedUpdate(DocumentEvent e) {
+            //Plain text components do not fire these events
+        }
+
+        public void updateLog(DocumentEvent e, String action) {
+            
+        }
+    }
 }
+

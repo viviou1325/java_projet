@@ -30,7 +30,7 @@
               <Component id="choice1" min="-2" pref="44" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jTextField1" pref="231" max="32767" attributes="0"/>
+                  <Component id="Accord" pref="231" max="32767" attributes="0"/>
                   <Component id="jPanel1" max="32767" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
@@ -43,7 +43,7 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+              <Component id="Accord" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="0" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="Clear" min="-2" max="-2" attributes="0"/>
@@ -198,6 +198,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton1.setBorder(null);&#xa;jButton1.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton2">
           <Properties>
@@ -208,6 +211,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton2ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton2.setBorder(null);&#xa;jButton2.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton3">
           <Properties>
@@ -218,6 +224,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton3.setBorder(null);&#xa;jButton3.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton4">
           <Properties>
@@ -228,6 +237,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton4.setBorder(null);&#xa;jButton4.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton5">
           <Properties>
@@ -238,6 +250,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton5ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton5.setBorder(null);&#xa;jButton5.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton6">
           <Properties>
@@ -248,6 +263,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton6ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton6.setBorder(null);&#xa;jButton6.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton7">
           <Properties>
@@ -258,6 +276,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton7ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton7.setBorder(null);&#xa;jButton7.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton8">
           <Properties>
@@ -268,6 +289,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton8ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton8.setBorder(null);&#xa;jButton8.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton9">
           <Properties>
@@ -278,6 +302,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton9ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton9.setBorder(null);&#xa;jButton9.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton10">
           <Properties>
@@ -288,6 +315,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton10ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton10.setBorder(null);&#xa;jButton10.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton11">
           <Properties>
@@ -298,6 +328,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton11ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton11.setBorder(null);&#xa;jButton11.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton12">
           <Properties>
@@ -308,6 +341,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton12ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton12.setBorder(null);&#xa;jButton12.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton13">
           <Properties>
@@ -318,6 +354,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton13ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton13.setBorder(null);&#xa;jButton13.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton14">
           <Properties>
@@ -328,6 +367,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton14ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton14.setBorder(null);&#xa;jButton14.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton15">
           <Properties>
@@ -338,6 +380,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton15ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton15.setBorder(null);&#xa;jButton15.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton16">
           <Properties>
@@ -348,6 +393,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton16ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton16.setBorder(null);&#xa;jButton16.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton17">
           <Properties>
@@ -358,6 +406,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton17ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton17.setBorder(null);&#xa;jButton17.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton18">
           <Properties>
@@ -368,6 +419,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton18ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton18.setBorder(null);&#xa;jButton18.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton19">
           <Properties>
@@ -378,6 +432,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton19ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton19.setBorder(null);&#xa;jButton19.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton20">
           <Properties>
@@ -388,6 +445,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton20ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton20.setBorder(null);&#xa;jButton20.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton21">
           <Properties>
@@ -398,6 +458,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton21ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton21.setBorder(null);&#xa;jButton21.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton22">
           <Properties>
@@ -408,6 +471,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton22ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton22.setBorder(null);&#xa;jButton22.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton23">
           <Properties>
@@ -418,6 +484,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton23ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton23.setBorder(null);&#xa;jButton23.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton24">
           <Properties>
@@ -428,6 +497,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton24ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton24.setBorder(null);&#xa;jButton24.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton25">
           <Properties>
@@ -438,6 +510,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton25ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton25.setBorder(null);&#xa;jButton25.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton26">
           <Properties>
@@ -448,6 +523,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton26ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton26.setBorder(null);&#xa;jButton26.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton27">
           <Properties>
@@ -458,6 +536,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton27ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton27.setBorder(null);&#xa;jButton27.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton28">
           <Properties>
@@ -468,6 +549,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton28ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton28.setBorder(null);&#xa;jButton28.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton29">
           <Properties>
@@ -478,6 +562,9 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton29ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton29.setBorder(null);&#xa;jButton29.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
         <Component class="javax.swing.JButton" name="jButton30">
           <Properties>
@@ -488,10 +575,20 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton30ActionPerformed"/>
           </Events>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="jButton30.setBorder(null);&#xa;jButton30.setBorderPainted(false);"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JTextField" name="jTextField1">
+    <Component class="javax.swing.JTextField" name="Accord">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="AccordActionPerformed"/>
+      </Events>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JTextField(text)"/>
+        <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="Accord.getDocument().addDocumentListener(new MyDocListener());"/>
+      </AuxValues>
     </Component>
     <Component class="java.awt.Choice" name="choice1">
       <AuxValues>
